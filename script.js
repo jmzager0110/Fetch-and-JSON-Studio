@@ -1,6 +1,7 @@
 // TODO: add code here
 window.addEventListener("load", function(){
-    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
+    //fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
+      fetch("./data.json").then(function(response){
       response.json().then( function(json) {
         let container = document.getElementById("container");
         let astronauts = json;
